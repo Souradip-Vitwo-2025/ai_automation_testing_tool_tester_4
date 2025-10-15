@@ -39,7 +39,7 @@ def process_data(a, b):
 
 # --- 4. Poorly formatted SQL Query (to test the SQL Validator) ---
 # Assuming the schema from our previous exercise: erp_branch_sales_order
-def get_recent_orders(customer_id):
+def get_recent_orders(custumer_id):
     """
     Returns an SQL query string. 
     It contains a table/column typo and a constraint violation (NULL for NOT NULL field).
