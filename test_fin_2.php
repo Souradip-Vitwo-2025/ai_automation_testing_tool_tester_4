@@ -60,8 +60,8 @@ function get_recent_orders($customer_id)
     // Typos: 'erp_branc_sales_order' (table typo) and 'custumer_id' (column typo)
     // Constraint violation: setting so_number to NULL (it's NOT NULL UNIQUE)
     $sql_query = "
-        INSERT INTO er_branc_sales_orders 
-        (so_id, custumers_id, approvStatus, so_number, createdAt)
+        INSERT INTO erp_branc_sales_orders 
+        (so_id, custumers_id, approvalStatus, so_number, createdAt)
         VALUES 
         (1001, {$customer_id}, 'Pending', NULL, '2024-10-15');
     ";
